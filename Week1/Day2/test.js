@@ -48,3 +48,4 @@ function sumNums(num1, num2){
     return num1 + num2
 }
 console.log(average(32, 34))
+console.log(average(33, 35))
