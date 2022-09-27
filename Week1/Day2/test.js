@@ -22,15 +22,29 @@ if(num = 30){
 //    console.log(foo);
 // }
 
-function foo(p1, p2){
-    return p1 + " " +p2;
-}
-console.log(foo('Azzam', 'Hamid'))
+//function foo(p1, p2){
+//   return p1 + " " +p2;
+//}
+//console.log(foo('Azzam', 'Hamid'))
 // few ways to declare a function
-let foo = function(){
-    return 'bar';
-}
-let foo =()=>{
-    return 'bar';
-}
+//let foo = function(){
+//    return 'bar';
+//}
+//let foo =()=>{
+//    return 'bar';
+//}
 console.log()
+function average (num1, num2){
+    let sum = num1 + num2;
+    let avg = sum/2;
+    return avg
+}
+function average2(num1, num2){
+    let sum = sumnum(num1, num2)
+    let avg = sum2
+    return avg;
+}
+function sumNums(num1, num2){
+    return num1 + num2
+}
+console.log(average(32, 34))
