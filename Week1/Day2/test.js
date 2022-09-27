@@ -33,3 +33,4 @@ let foo = function(){
 let foo =()=>{
     return 'bar';
 }
+console.log()
