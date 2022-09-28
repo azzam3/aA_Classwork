@@ -49,3 +49,10 @@ function sumNums(num1, num2){
 }
 console.log(average(32, 34))
 console.log(average(33, 35))
+
+function sayHello(name) {
+    return "Hello " + name;
+}
+var result = sayHello("ZamZam")
+console.log(sayHello("Chuckles"))
+console.log(result)
