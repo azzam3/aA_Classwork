@@ -29,3 +29,29 @@ function printRange (start, end){
     }
 }
 printRange(7,21)
+
+//console. log ("infinite")
+//let i = 20;
+//while (true){
+//    console.log(i);
+//}
+
+//Continue
+function skipFive(num){
+    for(let i = 1; i < num; i++){
+        if(i === 5){
+            continue
+        }
+        console.log(i);
+    }
+}
+skipFive(20)
+
+function breakAtFive(num){
+    for(let i = 1; i <= num; i++){
+        if (num === 5) {
+            break;
+        }
+        console.log(i);
+    }
+}
