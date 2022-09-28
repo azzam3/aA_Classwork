@@ -16,3 +16,5 @@ function count(start, end) {
     }
 }
 console.log(count(1, 10))
+
+// i ++ is the same thing is i +=1
