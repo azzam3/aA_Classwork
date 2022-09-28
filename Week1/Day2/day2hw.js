@@ -161,5 +161,10 @@ function whisper(string) {
 // isSubstring("Jump for joy", "joys"); // => false
 //
 function isSubstring(searchString, subString) {
-    // your code here...
+    if(searchString.indexOf(substring) > -1){
+      return true;
+    } else {
+      return false;
+    }
   }
+  console.log(isSubstring("The cat went to the store", "he cat went")); // => true)
