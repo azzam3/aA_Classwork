@@ -15,6 +15,7 @@ function count(start, end) {
         console.log(i)
     }
 }
-console.log(count(1, 10))
-
+//console.log(count(1, 10))
+count(1, 10)
 // i ++ is the same thing is i +=1
+// David showed me a shortcut Command + D highlight ALL COUNT changed to count
