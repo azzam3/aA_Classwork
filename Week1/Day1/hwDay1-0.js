@@ -28,11 +28,13 @@ console.log (14 % 3) === 0 // false
 console.log ('new york'[0]) // n
 console.log ('new york'[1]) // e
 console.log ('san francisco'[2*3]) // ? The answer is a but I am not sure why. 2*3 is 6 so does that lead to a
-console.log ('bootcamp'[3].toUpperCase()) // O. Answer is T not O
-console.log ('bootcamp'.indexOf('T')) // ? indexof is case sensitive
+console.log ('bootcamp'[3].toUpperCase()) // O. Answer is T not O 
+console.log ('bootcamp'.indexOf('T')) // -1 indexof is case sensitive. -1 means "no match found"
 console.log ('bootcamp'.indexOf('camp'))
 console.log ('bootcamp'.indexOf('o') > -1) //true
-console.log ('science'.indexOf('x') === -1)
+console.log ('science'.indexOf('x') === -1) // true
+
+
 
 
 // node Week1/day1/hwday1.js
