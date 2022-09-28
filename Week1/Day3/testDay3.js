@@ -49,9 +49,10 @@ skipFive(20)
 
 function breakAtFive(num){
     for(let i = 1; i <= num; i++){
-        if (num === 5) {
+        if (i === 5) {
             break;
         }
         console.log(i);
     }
 }
+breakAtFive(20);
