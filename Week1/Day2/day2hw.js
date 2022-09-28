@@ -126,7 +126,40 @@ function hello(str) {
 // yell("Time to program"); // => "TIME TO PROGRAM!!!"
 //
 function yell(str) {
-    var yelledStr = str.toUpperCase() + "!!!";
-    return yelledStr;
+    let ALLCAPS = str.toUpperCase() + "!!!";
+    return ALLCAPS;
   }
+// Had trouble writing this code. I didn't thing to use the variable (let)
+
   console.log(yell("help"))
+  console.log(yell("I want to go to the store"))
+
+
+
+  // Write a function `whisper` that takes in a string and returns a "whispered" version
+// of that string.
+//
+// Examples:
+// whisper("Hey Anthony"); // => "...hey anthony..."
+// whisper("YEA! that was fun"); // => "...yea! that was fun..."
+function whisper(string) {
+    // your code here...
+    let quiet ="..." + string.toLowerCase() +"..."
+    return quiet
+  }
+
+  console.log(whisper("Hey Anthony"));
+
+  // Write a function `isSubstring` that takes in two strings, `searchString` and
+// `subString`. The function should return `true` if `subString` is a part of the
+// `searchString`, `false` otherwise.
+// Write two versions of this function, using conditionals and without using conditionals
+//
+// Examples:
+// isSubstring("The cat went to the store", "he cat went"); // => true
+// isSubstring("Time to program", "time"); // => true
+// isSubstring("Jump for joy", "joys"); // => false
+//
+function isSubstring(searchString, subString) {
+    // your code here...
+  }

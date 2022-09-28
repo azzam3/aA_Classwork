@@ -2,4 +2,4 @@
 var sentence = 'welcome to bootcamp prep';
 var lastChar = sentence[sentence.length - 1];
 console.log(lastChar); // p
-console.log(sentence.lastindexOf(lastChar, 2)); // 23 or 18, 20, 23
+console.log(sentence.indexOf(lastChar, 2)); // anser is 18. index.of shows the furst instance of he character
