@@ -32,7 +32,17 @@ console.log(fruits)
 // fruits.shift(); // removes from the front
 // non mutating methods
 
-let numbers = [1, 2, 3]
+let numbers = [1, 2, 3, 4,20, 47, 56, 10021]
 console.log(fruits.concat(numbers));
 console.log(fruits);
 //.concat does not mutate the array
+
+console.log(numbers.slice()); //copy
+console.log(numbers.slice(1));
+console.log(numbers.slice(2,7));
+// first argument inclusve (includes the index you gave it), second arguement exclusive
+
+let string ="hi my name is Azzam"
+console.log(string.split(" ")) // turns the string into an array
+console.log(string)
+console.log(numbers.join("|-|"))
