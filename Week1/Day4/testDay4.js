@@ -45,4 +45,15 @@ console.log(numbers.slice(2,7));
 let string ="hi my name is Azzam"
 console.log(string.split(" ")) // turns the string into an array
 console.log(string)
-console.log(numbers.join("|-|"))
+console.log(numbers.join(""))
+
+//
+
+for(let i = 0; i < numbers.length; i++){
+    let ele = numbers[i];
+    console.log(ele)
+}
+for(let i = numbers.length - 1; i >= 0; i--){
+    let ele = numbers[i];
+    console.log(ele)
+}
