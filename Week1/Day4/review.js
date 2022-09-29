@@ -239,3 +239,23 @@ function sayNumber(number) {
   }
   
   console.log(sayGoodbye("Bob"));
+
+  function plusFive(num) {
+    // your code here...
+    let add5 = num + 5;
+    console.log(add5)
+    return add5
+  }
+  plusFive(10)
+//   console.log(plusFive(10));  // => 15
+//   console.log(plusFive(2));   // => 7
+//   console.log(plusFive(-8));  // => -3
+
+  function isCool(string) {
+    let coolSentence = string + " is cool!"
+    console.log(coolSentence)
+    return coolSentence
+  }
+  isCool("Music")
+  isCool("JavaScript")
+  isCool("The world")
