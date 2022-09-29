@@ -56,3 +56,18 @@ function breakAtFive(num){
     }
 }
 breakAtFive(20);
+
+console.log("Write a function isPrime(num) that takes in a number and returns true if the number is prime, and false otherwise")
+
+//any number less than 2 is not prime
+//a prime number is only divisible by itself and the number 1
+// num/num =1
+function isPrime(num){
+    if (num < 2) return false;
+    for (let n = 2; n < num; n++){
+        if(num % n === 0){
+            return false}
+    }
+    return true;
+}
+console.log(isPrime(10))
