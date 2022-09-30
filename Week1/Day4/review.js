@@ -259,3 +259,331 @@ function sayNumber(number) {
   isCool("Music")
   isCool("JavaScript")
   isCool("The world")
+
+
+  function whisper(str) {
+    let whisperedStr = "..." + str.toLowerCase() + "...";
+    return whisperedStr;
+  }
+  
+  console.log(whisper("Hey Buddy")); // => "...hey buddy..."
+  console.log(whisper("YEA! that was fun")); // => "...yea! that was fun..."
+
+  function echo(str) {
+    let firstEcho = str.toUpperCase();
+    let lastEcho = str.toLowerCase();
+  
+    return firstEcho + " ... " + str + " ... " + lastEcho;
+  }
+  
+  console.log(echo("Mom!")); // => prints "MOM! ... Mom! ... mom!"
+  console.log(echo("hey")); // => prints "HEY ... hey ... hey"
+  console.log(echo("JUMp")); // => prints "JUMP ... JUMp ... jump"
+
+  //   Conditionals
+//   Start to write functions that can do things conditionally by utilizing control flow
+//   control flow is the order in which instructions are executted within a program. One modifies control flow using control structures, expression that alter the control flow based on given parameters
+//   conditional statements are used to perform different actons based on different conditions
+//  conditional state ments can only hace one if and one else statment
+// if statement
+//  if statment has two parts
+//  1. the test expression - the code that immediately follows the if which goes in parentheses
+//  2.then exprestion this code blongs in curly braces after the if expresion, it will only run when if expression is truthy
+if (3 === 3) {
+    //this is the then expression
+    //this code will only rune if the above statement is true
+    console.log ("this is a three");
+}
+// the if statment abovve allows you to specify what shoould happen if your particular expression evaluate to tru. you can chain addition teste exptesion onto this if statement by using a else if statment
+
+// function mathFun(){
+//     let x = 2 + 3;
+//     if (x === 3) {
+//         console.log("we have a 3");
+//     } else if ( x === 4){
+//         console.log("we have a four")
+//     } else if (x === 5){ 
+//         console.log("we have a 5")
+//     }
+// };
+
+// mathFun();
+
+// The else if and if statements do not, however, provide the option to specify something else that should happen in the event that all of the above expressions evaluate to be false. The if...else statement reads just like English. The JS interpreter will execute the else statement if all the above conditions given are false. See below for an example:
+
+
+
+function mathFun() {
+    let x = 19;
+    if (x === 3) {
+      console.log("we have a 3");
+    } else if (x === 4) {
+      console.log("we have a 4");
+    } else {
+      console.log("I will return if everything above me is falsey!");
+    }
+  };
+  mathFun(); // => "I will return if everything above me is falsey!"
+
+  // You can chain an arbitrary number of else if statements but there can only be one if statement and one optional else statement. The if introduces the control structure and the else acts as a fail safe to catch everything that didn't meet the above conditions.
+  // Only one then expression is ever executed in an if, if...else, or if...else statement. If one of the test expressions is truthy, then the result of its then expression is the result of the entire conditional statement:
+  // Additionally, you can nest conditional statements within each other, but it will quickly become difficult to read and is discouraged:
+
+  // A general rule of thumb is that if you are working with a condition that is mutually exclusive, meaning if one condition is true the other condition must be false, then you should use an if/else statement. You can also think of mutually exclusivity like a coin flip - it can be either heads or tails but not both.
+
+//   function isOdd(num) {
+//     // your code here!
+//     if (num % 2 !== 0) {
+//         return true
+//     } else {
+//       return false
+      
+//     }
+//   }
+
+
+// //   function isOdd(number) {
+// //     return (number % 2 !== 0);
+// //   }
+  
+
+  
+//   console.log(isOdd(2)); // => false
+//   console.log(isOdd(5)); // => true
+//   console.log(isOdd(-17)); // => true
+
+  function isSubstring (searchString, subString ){
+    let lowerSearch = searchString.toLowerCase()
+    let lowerSub = subString.toLowerCase()
+
+    return lowerSearch.indexOf(subString) === 1
+  }
+  //Function ture if substring is part of search string upper or lowercase
+  // false otherwise
+  // if and else statements have to be used
+  // convert string to.lowercase() then evaluate
+  // but how do i seach if sub string is inside search string
+  // indexof or length might help
+  // searchString.indexOf(substring)
+
+console.log(isSubstring("The cat went to the store", "he cat went")); // => true
+console.log(isSubstring("Time to program", "time")); // => true
+console.log(isSubstring("Jump for joy", "joys")); // => false
+
+// Basic Loops
+// Reminder control flow is the order in which instructions are executed within a program
+// One modifies control flow using control structures, expressions that alter the control flow based on given parameters. 
+// Conditionals, Loops and Arrays
+// two most fundamental types of loops: for loop and while loop
+// index vvariables start at zero
+// What is an iteration
+
+// While there are still dirty dogs you still have a job to do. That is your condition - you will stop giving baths once all 6 dogs are clean. So after one bath you will have 1 clean dog and 5 dirty dogs. You've incremented (increased by one) your number of clean dogs. After each bath you check your condition again until you have 6 clean dogs - that's when you know you can stop!
+// the idea of looping - setting a condition, executing an action, doing something to make sure our condition will be met eventually, and rechecking our condition before executing our next action.
+
+// while llop will execute a block of code aslong as a specified condition is true
+
+// let index = 0;
+
+// // this is the condition that will be checked every time this loop is run
+// while (index < 10) {
+//   console.log("The number is " + index);
+//   // this is common shorthand for index = index + 1
+//   index++;
+// }
+
+//infinite loop
+// let index = 0;
+
+// // this is an infinite loop because our condition will never be false
+// while (index < 10) {
+//   console.log("The number is " + index);
+//   // if we do not increase the index then our condition is always true
+//   // meaning this will run forever!
+// }
+
+// A for loop can be broken down into three sections:
+
+//     The initial expression which will be run once at the beginning of the loop.
+//     The condition which is checked every time the loop is run. If this condition is true the loop will run again. If this condition is false the loop will end.
+//     The loopEnd expression which will be run at the end of the loop before checking the condition again.
+
+//     for (<initial expression>;<condition>;<loopEnd expression>)
+
+for (let index = 0; index < 10; index += 1) {
+    // the code inside this block will run 10 times
+  }
+
+  // these two do the exact same thing!
+function forLoopDoubler (array) {
+    // it is convention to shorten index to just i in most cases
+    for (let i = 0; i < array.length; i++) {
+      array[i] = array[i] * 2;
+    }
+    return array;
+  };
+  
+  function whileLoopDoubler (array) {
+    let i = 0;
+    while (i < array.length) {
+      array[i] = array[i] * 2;
+      i++;
+    }
+    return array;
+  };
+  
+  forLoopDoubler([1, 2, 3]); // => [2,4,6]
+  whileLoopDoubler([1, 2, 3]); //=> [2,4,6]
+
+
+  let i = 0
+  while (i < 5) {
+    console.log ("hello world")
+    i ++
+  }
+
+
+function logBetween (lowNum, highNum){
+    let i = lowNum;
+    while (i <= highNum) {
+        console.log(i);
+        i++
+    }
+}
+logBetween(4, 6);
+
+function printFives(max){
+  for (let i = 0; i < max; i= i + 5){
+      console.log(i)
+  }
+}
+
+// Example:
+
+printFives(20) // prints out:
+// 0
+// 5
+// 10
+// 15
+
+function fizzBuzz(max){
+  for (let i = 0; i < max; i++){
+      if (i % 3 === 0 || i % 5 === 0){
+          console.log(i)
+      }
+  }
+}
+// Examples:
+
+fizzBuzz(20); // prints out:
+// 3
+// 5
+// 6
+// 9
+// 10
+// 12
+// 18
+
+// Arrays
+
+// An array in javascript is used to store multiple values within a single structure, much like creating a list, arrays can hold strings, integers and even other arrays. they are incredibly usefulfor holding a bunch of different information all in one place
+// Goals
+// Write arrays using correct syntax
+// Identify that an array is an ordered list of values defined by using square brackets ([ ])
+// Use .length to obtain a count of the numbers of elements that comprise an array
+// Index an array to refer to a single value
+// Concatenate multiple arrays together
+// Add and remove items from an array
+
+
+// Arrays are always wrapped in square brackets ([ ]) and store their comma-separated values in sequential order. Arrays in JavaScript are also very flexible: you can put elements into an array, replace elements in an array, and remove elements from the array.
+
+// let alphabet = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+// instead of 
+
+// let a = "a";
+// let b = "b";
+// let c = "c";
+// let d = "d";
+// // and so on for way too long...
+
+//Calculating the length of an array
+
+console.log([4, 7, 9].length); // => 3
+console.log([1, 2].length); // => 2
+console.log([].length); // => 0
+
+//Properly indexing an array
+// arrays consist of multiple values all stored in sequencial order. numbered by indicides starting a zero
+
+let numbersAndLetters = ["b", "z", 17, "cat"];
+console.log(numbersAndLetters[0]); // => "b"
+console.log(numbersAndLetters[1]); // => "z"
+console.log(numbersAndLetters[2]); // => 17
+console.log(numbersAndLetters[3]); // => "cat"
+
+console.log(["a", "b", 'c'][1]); // b
+//You can access a value in an array directly by providing an index for the value we'd like to access in that array (array[index])
+
+// You can also calculate the index of a given value within an array by using indexOf:
+console.log([1, 3, 5, "apple", "jet"].indexOf(3)); // => 1
+console.log([1, 3, 5, "apple", "jet"].indexOf(5)); // => 2
+console.log([1, 3, 5, "apple", "jet"].indexOf("jet")); // => 4
+
+// this won't be found in the array
+console.log([1, 3, 5, "apple", "jet"].indexOf("potato")); // => -1
+
+//Concatenation with arrays
+// The + operator only exists for numbers and strings. If you try to use the + on an array it will try to help you out by converting your arrays into strings.
+console.log([1, 2, 3] + [4, 5, 6]); // => 1,2,34,5,6 this is actually a string
+// JavaScript was just trying to help! However that is probably not what you meant to do. Good thing JavaScript has a separate method for putting two arrays together. To concatenate arrays, you can use the aptly named .concat method
+
+console.log([1, 2, 3].concat([ 4, 5, 6,])); // => [1, 2, 3, 4, 5, 6]
+
+// manipulating arrays array.push(item) and array.pop()
+//Array.push(item) allows you to add items to the back of an array, and Array.pop() removes the last item from the array. For example:
+
+let arr = [1, 2, 3];
+arr.push(4);
+arr.push(5);
+console.log(arr);   // => [1, 2, 3, 4, 5]
+arr.pop();
+console.log(arr);   // => [1, 2, 3, 4]
+
+// if i want to double something i would multiply it by 2
+// how do i take out an individil number from and array
+// .length and .push .pop [] to get the index of a particular number
+
+function doubler(array){
+  for (let i = 0; i < array.length; i++){
+    array[i] = array [i] * 2;
+  }
+  return array;
+}
+
+console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
+
+// logEach(array)
+  function logEach(array) {
+    for (let i = 0; i < array.length; i += 1){
+      console.log( i + ": " + array[i])
+    }
+  } 
+
+logEach(["Anthony", "John", "Carson"]); // prints
+// 0: Anthony
+// 1: John
+// 2: Carson 
+
+function tripler(array) {
+  for (let i = 0; i < array.length; i++){
+    array[i] = array [i] * 3
+  }
+  return array
+}
+console.log(tripler([1,2,3]))
+
+// ** oddRange(13); // => [ 1, 3, 5, 7, 9, 11, 13 ]
+// ** oddRange(6); // => [ 1, 3, 5 ]
+// */
