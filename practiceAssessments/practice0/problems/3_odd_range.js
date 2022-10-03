@@ -10,6 +10,10 @@
 
 function oddRange(end) {
   // your code here...
+  for (let i = 0; i < end.length; i = i + 2){
+    end[i] = end[i]
+  }
+  return end[i]
 }
 
 
