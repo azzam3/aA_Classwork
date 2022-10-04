@@ -11,14 +11,27 @@ var cat2 = catBuilder('Nyan', 'rainbow', ['poptarts']);
 cat2; // => { name: 'Nyan', color: 'rainbow', toys: [ 'poptarts' ] }
 ***********************************************************************/
 
+// function catBuilder(name, color, toys) {
+// // let cat = {
+//     return{
+//     name: name,
+//     color: color,
+//     toys: toys
+//     // }
+// }
+// // return cat
+// }
+
 function catBuilder(name, color, toys) {
-let cat = {
-    name: name,
-    color: color,
-    toys: toys
-}
-// return cat
-}
+    let cat = {
+        // return{
+        name: name,
+        color: color,
+        toys: toys
+        // }
+    }
+    return cat
+    }
 
 console.log(catBuilder('Whiskers', 'black', ['scratching-post', 'yarn']))
 
