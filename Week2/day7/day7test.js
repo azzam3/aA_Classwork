@@ -99,3 +99,11 @@ console.log(cat.test)
 let test ="name";
 console.log(cat[test])// square variable allows you to assign the variable
 console.log(cat.test) // looking strictly for the key for test
+
+function printObject(obj){
+    for (let key in obj){
+        console.log(key)
+        console.log(obj[key])
+    }
+}
+printObject(cat) // Prints a collection of keys
