@@ -17,8 +17,8 @@ function isInside(array, ele){
 //     return array.indexOf(ele) > -1;
 // }
 
-console.log(isInside(['chase', 'phi', 'eliot'], 'fred'))
-console.log(isInside(['chase', 'phi', 'eliot'], 'eliot'))
+// console.log(isInside(['chase', 'phi', 'eliot'], 'fred'))
+// console.log(isInside(['chase', 'phi', 'eliot'], 'eliot'))
 // array.indexOf = -1 if false
 
 // Write a function `reverseStr(str)` that takes in a string as a parameter and
@@ -33,12 +33,17 @@ function reverseStr(str){
     let reversed = '';
     for (let i = str.length -1; i >= 0; i -= 1){
         let char = str[i]
-        reversed += char; // add the character to the reverse string, this part i had a difficult time conceptualizing
+        reversed += char; // add the character to the reverse string, this part i had a difficult time conceptualizing // reassignment of reversed to reversed + char in a loop
+        console.log(reversed);
     }
     return reversed;
 }
 
-console.log(reverseStr('bootcamp')); //=> 'pmactoob'
+// console.log(reverseStr('bootcamp')); //=> 'pmactoob'
+let test = 'test'
+console.log(test);
+test += ' concat this'
+console.log(test);
 // this one is  hard for me
 // creat an empty string to start
 // iterate over each character of the string but in reverse
@@ -64,7 +69,7 @@ function luckySevens(max){
     }
     return array
 }
-console.log(luckySevens(25))
+// console.log(luckySevens(25))
 // Is there a difference between using i++ and i+=7? or why would we use one over the other
 
 // Write a function `copyMachine(element, num)` that takes in an element and a number
@@ -79,5 +84,23 @@ console.log(luckySevens(25))
 
 function copyMachine(element, num){
     let array = []
-    
+    for (let i = 0; i < num; i++){
+        array.push(element)
+    }
+    return array
+
+}
+// console.log(copyMachine('candy', 2))
+
+//everyOtherWord
+// Write a function `everyOtherWord(sentence)` that takes in a sentence and returns
+// an array containing every other word in that sentence.
+//
+// Examples:
+//
+// everyOtherWord('hello how are you doing on this lovely day?'); // => [ 'hello', 'are', 'doing', 'this', 'day?' ]
+// everyOtherWord('the weather is wonderful'); // => [ 'the', 'is' ]
+
+function everyOtherWord(sentence){
+    for (let i = 0; i <= sentence; i += 2)
 }

@@ -87,7 +87,7 @@ function royalWe(sentence){
         
         if (word === 'I'){
             newWords.push('we');
-        } else if (word === ('mine'){
+        } else if (word === 'mine'){
             newWords.push('ours');
         } else if (word === 'my'){
             newWords.push('our');
@@ -104,14 +104,3 @@ function royalWe(sentence){
 console.log(royalWe('This is mine. my me I'))
 // need a way to look at each single word
 // first I want to split the sentence to an array of words and free to iterate overit
-
-function isPrime(number){
-    if number < 2{
-        return false;
-    }
-    for (let i = 2; i < number; i++){
-        if (number % i === -){
-            return false;
-        }
-    }
-}
