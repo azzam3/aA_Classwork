@@ -13,7 +13,11 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
 function valuePair(obj1, obj2, key) {
-
+    let a = obj1[key]
+    let b = obj2[key]
+    //let c = [a, b]
+    return [a, b]
+    
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
