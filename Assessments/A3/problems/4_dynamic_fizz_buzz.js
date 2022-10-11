@@ -16,12 +16,15 @@ function dynamicFizzBuzz(max, num1, num2){
   for (let i = 1; i < max; i++){
     let a = ((i % num1) === 0)
     let b = ((i % num2) === 0)
-    let c = ((i % num2) !== 0)
-    let d = ((i % num1) !== 0)
+    // let c = ((i % num2) !== 0)
+    // let d = ((i % num1) !== 0)
     
-    if ((a && c) || (b && d)) {
+    if ((a || b) && !(a && b)) {
       array.push(i)
     }
+    // if ((a && c) || (b && d)) {
+    //   array.push(i)
+    // }
   }
   return array
 
