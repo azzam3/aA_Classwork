@@ -20,9 +20,11 @@ function adults(people) {
   let array = []
   for (let i = 0; i < people.length; i++){
     let list = people[i]
-    
-    console.log(list)
+    if (list.age >= 18){
+      array.push(list.name)
+    }
   }
+  return array
 }
 
 

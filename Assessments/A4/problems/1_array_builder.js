@@ -30,5 +30,7 @@ console.log(arrayBuilder({'cats': 2, 'dogs': 1}))
 // count is my object
 // animals is my key
 // obj[key]
+// thanks mike
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = arrayBuilder;
