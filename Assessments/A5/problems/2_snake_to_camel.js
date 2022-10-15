@@ -17,17 +17,19 @@ let newWord = word[i][0].toUpperCase() + words[i].slice(1).toLowerCase()
 *******************************************************************************/
 
 function snakeToCamel(str) {
-  // your code here...
-  let words = string.split('_');
-  let ans = []
-  for (let word of words){
-    ans.push(new_word
-      )
 
-  }
-  return ans.join
+
+  // your code here...
+//   let words = string.split('_');
+//   let ans = []
+//   for (let word of words){
+//     ans.push(new_word
+//       )
+
+//   }
+//   return ans.join
 }
-// 
+//test
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = snakeToCamel;
